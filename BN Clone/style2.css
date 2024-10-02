@@ -1,0 +1,382 @@
+
+
+
+.notice-main{
+    color: black;
+    margin-top: 78%;
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    width: 25%;
+    /* border-radius: 10px; */
+    height: 450px;
+    background-color: red;
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 500;
+    margin-left: 69%;
+    z-index: -1;
+    
+}
+
+.notice-main:hover{
+    animation-play-state: paused;
+}
+.notice1{
+    background-color: #c11010;
+    height: 50px;
+    z-index: 1000;
+    font-weight: 350;
+    color: white;
+    align-items: center;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+}
+
+
+.notice-main .notice2{
+    background-color:#ffbf00;
+    height: 80px;
+    font-weight: 350;
+    width: 95%;
+    color: black;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+text-align: left;
+padding-left: 19px;
+z-index: -1;
+}
+
+
+
+.notice-main .notice3{
+    background-color:#ffbf00;
+    height: 80px;
+    margin-top: 2px;
+    font-weight: 350;
+    width: 95%;
+    color: black;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+text-align: left;
+padding-left: 19px;
+
+}
+
+
+.notice-main .notice4{
+    background-color:#ffbf00;
+    height: 80px;
+    margin-top: 2px;
+    font-weight: 350;
+    width: 95%;
+    color: black;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+text-align: left;
+padding-left: 19px;
+
+}
+
+
+
+.notice-main .notice5{
+    background-color:#ffbf00;
+    height: 80px;
+    margin-top: 2px;
+    font-weight: 350;
+    width: 95%;
+    color: black;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+text-align: left;
+padding-left: 19px;
+
+}
+
+
+
+.notice-main .notice6{
+    background-color:#ffbf00;
+    height: 80px;
+    margin-top: 2px;
+    font-weight: 350;
+    width: 95%;
+    color: black;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+justify-items: center;
+font-family: "Poppins", sans-serif;
+align-content: center;
+text-align: left;
+padding-left: 19px;
+
+}
+
+
+.notice7{
+    width: 25%;
+    height: 60px;
+    background-color: #ffbf00;
+    position: absolute;
+    margin-top: 1600px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: end;
+    align-content: center; 
+    z-index: 1000;
+    margin-left: 69%;
+    color: red;
+    overflow: hidden;
+
+}
+#calender{
+    color: red;
+}
+#invisible{
+    color: #ffbf00;
+}
+.message{
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    margin-top: 1750px;
+    background-color: #f2f2f2;
+}
+
+#time{
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.message .text-head{
+    color: rgb(55, 53, 53);
+    font-weight: 550;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+
+#why{
+    color: rgb(60, 59, 59);
+    width: 40%;
+    font-weight: 550;
+    font-family: "Outfit", sans-serif;
+    position: absolute;
+    margin-left: 40%;
+    height: 40px;
+    margin-top: 2200px;
+    font-size: 34px;
+    padding-bottom: 420px;
+}
+
+
+
+.chairman-pic{
+position: absolute;
+margin-left: 13%;
+margin-top: 5.50%;
+transition-duration: 0.6s;
+}
+.chairman-pic:hover{
+    transform: scale(1.1);
+}
+.pri-pic{
+    position: absolute;
+margin-left: 51%;
+margin-top: 4%;
+transition-duration: 0.6s;
+/* margin-top: 5%; */
+}
+.pri-pic:hover{
+    transform: scale(1.1);
+}
+
+.chairman{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: 5%;
+    font-size: 23px;
+}
+
+.underline{
+    width: 13.10%;
+    height: 40px;
+    /* background-color: silver; */
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 7%;
+    border-bottom: 3px solid #7f7b7b;
+    
+}
+
+.h1-text{
+    position: absolute;
+    margin-left: 24%;
+    font-weight: 550;
+    font-size: 20px;
+    margin-top: 11%;
+}
+
+.talks{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: 16.60%;
+}
+
+.read-moree{
+    position: absolute;
+    margin-left: 24%;
+    margin-top: 23%;
+    color: #565454;
+    transition-duration: 0.3s;
+}
+
+
+.read-moree:hover{
+    color: black;
+    font-weight: 550;
+}
+
+.pri-sms{
+    position: absolute;
+    margin-left: 62%;
+    margin-top: 4%;
+    font-size: 23px;
+}
+
+.talks-pri{
+    position: absolute;
+    margin-left: 62%;
+    margin-top: 16.60%;
+}
+
+.h2-talks{
+    position: absolute;
+    margin-left: 62%;
+    font-weight: 550;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.u2{
+    width: 13.10%;
+    height: 40px;
+    /* background-color: silver; */
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 6%;
+    border-bottom: 3px solid #7f7b7b;
+}
+
+
+.read-more2{
+    position: absolute;
+    margin-left: 62%;
+    margin-top: 23%;
+    color: #565454;
+    transition-duration: 0.4s;
+}
+
+
+.read-more2:hover{
+    color: black;
+    font-weight: 550;
+}
+
+.section{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, blue,white);
+    opacity: 0.5;
+    margin-top: 2300px;
+    border: none;
+    overflow: hidden;
+}
+
+section .wave{
+    position: absolute;
+    margin-top: 300px;
+    background-color: #3586ff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 18%;
+    color: blue;
+    background:url(wave.png);
+    /* background-size: 1000px 100px; */
+}
+
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+z-index: 1000;
+bottom: 0;
+opacity: 1;
+animation-delay: 0s;
+
+}
+
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+z-index: 999;
+opacity:0.5;
+animation-delay: -0.5s;
+bottom:3px;
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x:0px ;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+section .wave.wave3{
+    animation: animate 17s linear infinite;
+z-index: 998;
+bottom: 0;
+opacity:0.2;
+animation-delay: -2s;
+}
+
+section .wave.wave4{
+    animation: animate 5s linear infinite;
+z-index: 999;
+opacity:0.4;
+bottom: 0;
+animation-delay: -0.5s;
+}
+@keyframes animate{
+0%{
+    background-position-x:0px ;
+}
+
+100%{
+    background-position-x: 1000px;
+}
+} 

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    background-color: black;
+    padding: 0;
+}
+
+.box{
+    width: 50%;
+    height: 350px;
+    /* background-color: blue; */
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 25%;
+    border-top: 2px dashed;
+    border-image-source: url(/img/border-image.png) 87 / 47px / 0px round;
+    border-left: 2px dashed red;
+    border-bottom: 2px dashed greenyellow;
+    border-right: 2px dashed cyan;
+ animation: rotate 3s linear infinite ;
+}
+
+@keyframes rotate {
+   0%{
+    transform: rotate3d(344deg);
+   }
+   100%{
+    transform: rotate3d(60deg);
+   }
+}
