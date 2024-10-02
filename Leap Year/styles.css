@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 246, 248);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+#main{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 50px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    align-content: center;
+    position: absolute;
+    border-radius: 10px;
+    color: rgb(64, 46, 254);
+    box-shadow: 1px 2px 14px 5px blue;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+#placeholder{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#input-box{
+    border:none;
+    position: absolute;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-left:33%;
+    transform: none;
+    font-weight: bold;
+    text-decoration: none;
+    transition: none;
+    margin-top: -17%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 10px 1px rgb(246, 186, 203);
+    width: 30%;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+#input-box:hover{
+box-shadow: 1px 2px 14px 5px rgb(217, 14, 14);
+}
+
+
+#input-box::before{
+    visibility: visible;
+}
+#input-box::after{
+    visibility: hidden;
+}
+.none{
+    position: absolute;
+    padding: 05px;
+    border: none;
+    background-color: rgb(0, 0, 13);
+    color: white;
+    border-radius: 30px;
+    margin-left: 38%;
+    width: 20%;
+    height: 40px;
+    margin-top: 30%;
+    box-shadow: 1px 2px 10px 5px rgb(58, 205, 231);
+}
+.none:hover{
+    width:18%;
+    height: 36px;
+}
+.head{
+    font-family: "Roboto Condensed", sans-serif;
+background: linear-gradient(to right, #9898f1,#ee3636);
+-webkit-text-fill-color: transparent;
+width: fit-content;
+    background-clip: text;
+    font-size: 20px;
+position: absolute;
+margin-top: -30%;
+margin-left: 35%;
+    font-weight: bolder;
+}
+
+.all{
+    background-color: rgb(0, 0, 11);
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+position: relative;
+margin-left: 30%;
+margin-top: 15%;
+    height: 300px;
+    box-shadow: 1px 2px 58px 5px rgb(13, 112, 241);
+}
