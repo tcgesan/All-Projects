@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+   font-family: "poppins", sans-serif ;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root {
+   /*Dark mode colors*/
+    --text-color:white;
+   --subheading-color: #828282;
+   --placeholder-color: #fdfafa;
+   --primary-color: #000000;
+   --secondary-color: #3c3e41;
+   --secondary-hover-color: #444;
+   --recent-color:rgb(95, 98, 101);
+}
+.header .gemini{
+   margin-left: 42rem;
+   margin-top: 2rem;
+   
+}
+
+.light_mode{
+   /*Light mode colors*/
+   --text-color:#222;
+   --subheading-color: #A0A0A0;
+   --placeholder-color: #6C6C6C;
+   --primary-color: #FFF;
+   --secondary-color: #E9EEF6;
+   --secondary-hover-color: #DBE1EA;
+}
+
+
+body{
+   background: var(--primary-color) ;
+}
+
+.header, .typing-area{
+color: var(--text-color);
+}
+
+
+.header{
+   margin-top: 7vh;
+   padding: 1rem;
+   position:absolute;
+   /* flex-shrink: 0; */
+   scroll-behavior: smooth;
+   z-index: 1;
+   /* bottom: 0; */
+   overflow-y:auto;
+  
+} 
+ .header .title{
+   margin-left: 2.7rem;
+   font-size: 2.7rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3rem;
+   background-clip: text;
+   width: fit-content;
+   background: linear-gradient(to right, #6196eb , #e91b97);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+.header, .chat-list .message, .typing-form{
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.header, .typing-area{
+   color: var(--text-color);
+} 
+ 
+.header .title{
+   margin-left: 23rem;
+   font-size: 2.7rem;
+   background-clip: text;
+   width: fit-content;
+   margin-top: 3rem;
+   background: linear-gradient(to right, #4269e9 , #f159aa);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+} 
+body .hide-header .header{
+ display: none;
+ /* margin-top: 0px; */
+}
+.header .subtitle{
+   font-size: 2.4rem;
+   color: var(--subheading-color);
+   margin-left: 23rem;
+}
+
+.header :where(.title, .subtitle){
+   font-weight: 500;
+   line-height: 3.6rem;
+}
+
+.suggestion-list{
+   margin-top: 9.5vh;
+   list-style: none;
+   display: flex;
+   gap: 1.25rem;
+   overflow-x: auto;
+   scrollbar-width: none;
+}
+
+.suggestion-list .suggestion{
+   background: var(--secondary-color);
+   padding: 1.2rem;
+   cursor: pointer;
+   width: 227px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: space-between;
+   flex-shrink: 0;
+   border-radius: 0.75rem;
+}
+.suggestion-list .suggestion:hover{
+background: var(--secondary-hover-color);
+}
+
+.suggestion-list .suggestion .text{
+   font-weight: 400;
+}
+
+.suggestion-list .suggestion .icon{
+   background: var(--primary-color);
+   height: 42px;
+   width: 42px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   font-size: 1.3rem;
+   margin-top: 2.5rem;
+ }
+.typing-area .gemini1{
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+margin-top: -40px;
+margin-left:40px;
+}
+.chat-list{
+   padding: 2rem 1rem 12rem;
+   max-height: 100vh;
+   overflow-y: hidden;
+   scrollbar-color: #62a3e8 transparent;
+ scroll-behavior: smooth; 
+ margin-left: 23rem;
+ }
+.chat-list .message.incoming{
+   margin-top:2.5rem;
+}
+
+.chat-list .message .message-content{
+display: flex;
+gap: 4.5px;
+width: 100%;
+align-items: center;
+}
+ .chat-list .message .avatar{
+   width: 30px;
+   height: 30px;
+   object-fit: cover;
+   align-self: flex-start;
+   border-radius: 50%;
+}
+.chat-list .message.loading .avatar{
+   animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
+
+
+.chat-list .message .text{
+   color: var(--text-color);
+}
+
+.chat-list .message.loading .text{
+   display: none;
+}
+.chat-list .message .icon{
+   height: 45px;
+   width: 45px;
+   cursor: pointer;
+   margin-left: 30rem;
+   font-size: 2rem;
+   background: var(--secondary-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   color: var(--text-color);
+   visibility:hidden;
+}
+.chat-list .message:not(.loading):hover .icon:not(.hide){
+   visibility: visible;
+}
+.chat-list .message .icon:hover{
+   background: var(--secondary-color);
+}
+.chat-list .loading-indicator{
+   display: none;
+   width: 100%;
+   flex-direction: column;
+   gap: 0.8rem;
+}
+
+.chat-list .message.loading .loading-indicator {
+   display: flex;
+}
+.chat-list .loading-indicator .loading-bar{
+   height: 11px;
+   border-radius: 0.14rem;
+   width: 100%;
+   background: linear-gradient(to right, #206be4, var(--primary-color), #2a20ea);
+   animation: animate 3s linear infinite;
+}
+
+.chat-list .loading-indicator .loading-bar:last-child{
+   width: 70%;
+}
+
+
+
+@keyframes animate{
+   0%{
+      background-position: -800px 0;
+   }
+
+   100%{
+      background-position: 800px 0;
+   }
+}
+
+
+.typing-area{
+   position: fixed;
+   width: 100%;
+   bottom: 0px;
+   max-width: 100%;
+   height: 5.4rem;
+   padding: 1rem;
+   background: var(--primary-color);
+
+}
+.typing-area .input-wrapper{
+   height: 56px;
+   width: 100%;
+   display: flex;
+   position: relative;
+}
+.typing-area .typing-input{
+   width: 100%;
+   height: 100%;
+   background: var(--secondary-color);
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   border-radius: 6.2rem;
+   color: var(--text-color);
+   padding: 1.1rem 4rem 1.1rem 1.5rem;
+}
+
+.typing-area :where(.typing-form, .action-buttons){
+  display: flex;
+  gap: 0.75rem;
+}
+.typing-area .icon{
+   background: var(--secondary-color);
+   height: 56px;
+   width: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   cursor: pointer;
+
+}
+.typing-area .icon:hover{
+   background: var(--secondary-hover-color)!important;
+}
+
+.typing-area .input-wrapper .icon{
+   position: absolute;
+   right:0;
+   outline: none;
+   border: none;
+   color: var(--text-color);
+   background:none;
+   transform: scale(0);
+   transition: transform 0.2s ease;
+}
+
+
+   .typing-area .input-wrapper .typing-input:valid~ .icon{
+      transform: scale(1);
+   }
+
+.typing-area .disclaimer-text{
+   font-size: 0.85rem;
+   margin-top: 1rem;
+   margin-bottom:0.50rem ;
+   text-align: center;
+   color: var(--placeholder-color);
+}
+
+.typing-area .typing-input::placeholder{
+   color: var(--placeholder-color);
+}
+
+.typing-area .typing-input:focus{
+   background: var(--secondary-hover-color);
+}
